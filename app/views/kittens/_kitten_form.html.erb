@@ -1,0 +1,31 @@
+<%= form_for(@kitten, :html => {:class => 'form-horizontal'}) do |f| %>
+  <div class="form-group">
+    <%= f.label :name, class: 'col-md-2' %>
+    <div class="col-md-6">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :age, class: 'col-md-2' %>
+    <div class="col-md-2">
+      <%= f.text_field :age, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :cuteness, class: 'col-md-2' %>
+    <div class="col-md-2">
+      <%= f.text_field :cuteness, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :softness, class: 'col-md-2' %>
+    <div class="col-md-2">
+      <%= f.text_field :softness, class: 'form-control' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-2 col-md-offset-2">
+      <%= f.submit 'Create', class: 'btn btn-default' %>
+    </div>
+  </div>
+<% end %>
