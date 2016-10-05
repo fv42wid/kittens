@@ -12,6 +12,7 @@
 	  <th>Age</th>
 	  <th>Cuteness</th>
 	  <th>Softness</th>
+	  <th></th>
 	</tr>
       </thead>
       <tbody>
@@ -21,6 +22,7 @@
 	    <td><%= kitten.age %></td>
 	    <td><%= kitten.cuteness %></td>
 	    <td><%= kitten.softness %></td>
+	    <td><%= link_to 'Delete', kitten_path(kitten), method: :delete %></td>
 	  </tr>
 	<% end %>
       </tbody>
